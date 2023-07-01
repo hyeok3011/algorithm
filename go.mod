@@ -1,5 +1,5 @@
-module github.com/hyeok3011/leetcode
+module github.com/hyeok3011/algorithm
 
-go 1.19
+go 1.20
 
 require github.com/go-playground/assert/v2 v2.2.0
