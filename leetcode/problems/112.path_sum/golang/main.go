@@ -54,7 +54,7 @@ func hasPathSumDFSStack(root *TreeNode, targetSum int) bool {
 	nodeStack := []*TreeNode{root}
 	sumStack := []int{0}
 
-	for len(nodeStack) == 0 {
+	for len(nodeStack) != 0 {
 		currentNode := nodeStack[len(nodeStack)-1]
 		currentSum := sumStack[len(sumStack)-1]
 
