@@ -31,8 +31,6 @@ func generatePermutations(nums, current []int, permutations *[][]int, used []boo
 	}
 }
 
-// 첫번째 풀이
-// 시간복잡도가 n!이기때문에 해당 알고리즘은 효율이 좋다고 할수가 없음.
 func permute2(nums []int) [][]int {
 	if len(nums) == 1 {
 		return [][]int{nums}
