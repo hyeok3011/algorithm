@@ -52,7 +52,7 @@ func backtracking(nums []int, index int) bool {
 		if (index + i) > len(nums)-1 {
 			continue
 		}
-		if fail(nums, index+i) {
+		if backtracking(nums, index+i) {
 			return true
 		}
 	}
