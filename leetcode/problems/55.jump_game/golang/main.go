@@ -7,11 +7,6 @@ func canJump(nums []int) bool {
 	targetIndex := len(nums) - 1
 	currentIndex := targetIndex - 1
 	for currentIndex >= 0 {
-		if nums[currentIndex] == 0 {
-			currentIndex -= 1
-			continue
-		}
-
 		if (nums[currentIndex] + currentIndex) >= targetIndex {
 			targetIndex = currentIndex
 		}
