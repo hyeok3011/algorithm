@@ -2,7 +2,8 @@ package main
 
 // https://leetcode.com/problems/maximum-subarray/
 // Runtime 79 ms Beats 99.52% Memory 8 MB Beats 88.64%
-// 개인적으로 어려웠는데 다른사람들의 풀이를 보니 엄청 쉽게풀었다...
+// 지난번에 풀은 문제랑 비슷했는데 이상하게 유난히 어렵게 느껴젔다.
+// @@@@@@@@@@@@@@@@@@@
 func maxSubArray(nums []int) int {
 	if len(nums) == 0 {
 		return 0
