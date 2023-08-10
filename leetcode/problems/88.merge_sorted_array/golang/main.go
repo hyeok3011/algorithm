@@ -19,3 +19,11 @@ func merge(nums1 []int, m int, nums2 []int, n int) {
 
 	sort.Ints(nums1)
 }
+
+func merge2(nums1 []int, m int, nums2 []int, n int) {
+	// Merge nums1 and nums2
+	nums1 = append(nums1[:m], nums2...)
+
+	// Sort nums1
+	sort.Ints(nums1)
+}
