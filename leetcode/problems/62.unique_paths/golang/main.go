@@ -2,6 +2,7 @@ package main
 
 // https://leetcode.com/problems/unique-paths/
 // Runtime 0 ms Beats 100% Memory 2.2 MB Beats 21.7%
+// visited를 map으로 만들면 메모리 사용량을 최적화 가능할거같다
 func uniquePaths(m int, n int) int {
 	visited := make([][]int, m)
 	for i := 0; i < len(visited); i++ {
