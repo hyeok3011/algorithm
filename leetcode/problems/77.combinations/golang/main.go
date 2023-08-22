@@ -2,6 +2,8 @@ package main
 
 // https://leetcode.com/problems/combinations/description/
 // Runtime 121 ms Beats 16.75% Memory 50.4 MB Beats 16.45%
+// 넘나 느린것.... 0ms는 어떻게 나온건지 모르겠음...
+// @@@@@@@@@@@@@@@@@2 다시 풀어볼것
 func combine(n int, k int) [][]int {
 	combinations := [][]int{}
 	current := make([]int, 0, k)
