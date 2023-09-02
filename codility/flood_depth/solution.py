@@ -23,10 +23,9 @@ def solution(A):
 # two pointer algorithm
 def solution2(A):
     N = len(A)
-    if N < 3:  # At least 3 blocks are needed to hold water
+    if N < 3:  
         return 0
     
-    # Initialize pointers and other variables
     left, right = 0, N - 1
     max_depth = 0
     left_wall, right_wall = A[left], A[right]
