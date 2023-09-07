@@ -29,11 +29,3 @@ func solution(bridge_length int, weight int, truck_weights []int) int {
 
 	return duration
 }
-
-// func moveDuration(bridgeLength, truckWeight int) int {
-// 	duration := bridgeLength / truckWeight
-// 	if duration == 0 {
-// 		return 1
-// 	}
-// 	return duration
-// }
