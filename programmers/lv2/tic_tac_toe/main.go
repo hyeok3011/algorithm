@@ -1,5 +1,7 @@
 package main
 
+// https://school.programmers.co.kr/learn/courses/30/lessons/160585
+
 func solution(board []string) int {
 	oCount := 0
 	xCount := 0
