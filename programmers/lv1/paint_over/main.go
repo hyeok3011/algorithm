@@ -1,5 +1,6 @@
 package main
 
+// https://school.programmers.co.kr/learn/courses/30/lessons/161989
 func solution(n int, m int, section []int) int {
 
 	drawCount := 0
