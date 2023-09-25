@@ -8,6 +8,7 @@ import (
 
 const DATE_FORMAT = "2006.01.02"
 
+// https://school.programmers.co.kr/learn/courses/30/lessons/150370
 func solution(strToday string, terms []string, privacies []string) []int {
 	policyTerms := make(map[string]int)
 
