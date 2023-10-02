@@ -1,5 +1,6 @@
 package main
 
+// https://school.programmers.co.kr/learn/courses/30/lessons/150365
 // 기본 d, l, r, u순서대로 접근하며 제외사항을 제외하고나니 풀렸다... 사실 풀릴지 몰랐다.
 // 제외사항 2가지
 // 이동해야할 거리보다 이동할수 있는 거리가 짧은경우.
