@@ -7,6 +7,9 @@ package main
 // 같은 점수의 과녁을 맞추면 어피치가 점수를 얻게되고 라이언은 반드시 높아야한다.
 // 가장 큰 점수차이를 만들더라도 더 낮은 점수의 비중이 높아야한다.
 
+// 간단하게 설명하자면 combination문제이다.
+// 과녁별로 어피치보다 더 높은 점수를 얻거나 무시하는 케이스를 만들어 비교했다.
+// 끗
 func solution(n int, info []int) []int {
 	apeachScore := 0
 	for i := range info {
