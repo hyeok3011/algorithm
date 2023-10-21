@@ -8,13 +8,13 @@ package main
 func solution(arrayA []int, arrayB []int) int {
 	var yh, cs int
 	if gcd := getGCD(arrayA); gcd != 1 {
-		if isNotGCD(arrayB, gcd) {
+		if isNotCD(arrayB, gcd) {
 			yh = gcd
 		}
 	}
 
 	if gcd := getGCD(arrayB); gcd != 1 {
-		if isNotGCD(arrayA, gcd) {
+		if isNotCD(arrayA, gcd) {
 			cs = gcd
 		}
 	}
@@ -26,7 +26,7 @@ func solution(arrayA []int, arrayB []int) int {
 	return cs
 }
 
-func isNotGCD(elements []int, gcd int) bool {
+func isNotCD(elements []int, gcd int) bool {
 	for _, v := range elements {
 		if v%gcd == 0 {
 			return false
