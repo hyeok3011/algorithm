@@ -31,7 +31,7 @@ func TestSetZeroes(t *testing.T) {
 	for _, tc := range testCases {
 		setZeroes(tc.input)
 		if !reflect.DeepEqual(tc.input, tc.output) {
-			t.Fatalf("1expected: %v, got: %v", tc.output, tc.input)
+			t.Fatalf("expected: %v, got: %v", tc.output, tc.input)
 		}
 	}
 
