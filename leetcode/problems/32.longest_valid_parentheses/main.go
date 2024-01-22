@@ -11,6 +11,8 @@ https://leetcode.com/problems/subsets/description/
 스택의 마지막이 (라면 pop하고 i - top()를 계산하면 된다.
 그래도 문제가 있다.
 ()케이스를 틀린다. 그래서 그냥 처음에 -1을 추가해버렸다.
+
+hard는 어렵따
 */
 
 type Stack struct {
