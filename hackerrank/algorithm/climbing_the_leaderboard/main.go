@@ -40,15 +40,15 @@ func climbingLeaderboard(ranked []int32, player []int32) []int32 {
 		}
 	}
 
-	playerRanked := make([]int32, len(player))
+	playerRanks := make([]int32, len(player))
 	for i, score := range player {
 		for lastUniqueRankIndex >= 0 && score >= uniqueRankedScores[lastUniqueRankIndex] {
 			lastUniqueRankIndex--
 		}
 
-		playerRanked[i] = lastUniqueRankIndex + 1
+		playerRanks[i] = lastUniqueRankIndex + 1
 	}
-	return playerRanked
+	return playerRanks
 }
 
 func main() {
