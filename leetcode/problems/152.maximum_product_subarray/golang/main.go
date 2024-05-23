@@ -2,7 +2,7 @@ package main
 
 // https://leetcode.com/problems/maximum-product-subarray/description/
 // Runtime 3 ms Beats 91.67% Memory 3.4 MB Beats 98.92%
-
+// @@@@@@@@@@@@@@@@
 func maxProduct(nums []int) int {
 	if len(nums) == 0 {
 		return 0

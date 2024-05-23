@@ -14,7 +14,6 @@ func groupAnagrams(words []string) [][]string {
 				runeLetters[letter-97] += 1
 			}
 		}
-
 		if _, ok := group[string(runeLetters)]; ok {
 			group[string(runeLetters)] = append(group[string(runeLetters)], word)
 		} else {

@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/maximum-swap/description/
-// 
+// O(N)방법
 /**
  * @param {number} num
  * @return {number}

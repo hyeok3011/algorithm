@@ -2,7 +2,7 @@ package main
 
 // https://leetcode.com/problems/container-with-most-water/description/
 // Runtime 81 ms Beats 80.98% Memory 8.2 MB Beats 52.32%
-// Two Point
+// Two Pointer
 // 제대로 푼거같은데 너무 느림... 뭐지?
 func maxArea(height []int) int {
 	maximum := 0
