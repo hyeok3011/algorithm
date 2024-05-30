@@ -3,7 +3,8 @@ package main
 import "strings"
 
 // https://school.programmers.co.kr/learn/courses/30/lessons/118666
-
+// 문제만 잘 이해된다면 풀기 쉬운 문제
+// RT TR 문자 순서에 따라서 점수개념만
 func solution(survey []string, choices []int) string {
 	var personality strings.Builder
 	personalityScoreMap := map[rune]int{'R': 0, 'T': 0, 'C': 0, 'F': 0, 'J': 0, 'M': 0, 'A': 0, 'N': 0}
