@@ -1,3 +1,4 @@
+// https://school.programmers.co.kr/learn/courses/30/lessons/49189
 // 가장 멀리 떨어진 노드란 최단경로로 이동했을 때 간선의 개수가 가장 많은 노드들을 의미
 function solution(n, edge) {
     let graph = {}
