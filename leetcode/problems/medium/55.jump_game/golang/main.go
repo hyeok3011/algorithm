@@ -31,6 +31,8 @@ func AnotherSolution(nums []int) bool {
 	return true
 }
 
+// 2,3,1,1,4]
+
 func max(a, b int) int {
 	if a > b {
 		return a

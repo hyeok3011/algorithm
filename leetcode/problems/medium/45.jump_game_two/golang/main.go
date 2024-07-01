@@ -2,8 +2,8 @@ package main
 
 // https://leetcode.com/problems/jump-game-ii/description/
 // Runtime 9 ms Beats 91.21% Memory 5.9 MB Beats 93.3%
-// 처음에 문제를 제대로 이해하지 못하고 시간복잡도를 O(n^2)로 만들었다가
-// 천천히 문제를 보며 다시 풀어 O(n)으로 변경하였으나 Leetcode문제인건지 속도나 큰 차이가 없음
+// 처음에 시간복잡도를 O(n^2)로 만들었다가
+// 다시 풀어 O(n)으로 변경하였으나 Leetcode문제인건지 속도나 큰 차이가 없음
 // @@@@@@@
 // -0-
 func jump(nums []int) int {
@@ -45,7 +45,5 @@ func jump2(nums []int) int {
 		}
 		currentIndex = maxJumpIndex
 	}
-
 	return step
-
 }

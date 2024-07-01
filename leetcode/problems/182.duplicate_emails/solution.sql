@@ -1,7 +1,6 @@
 -- Runtine Runtime 858 ms
 SELECT email AS Email FROM Person GROUP BY email HAVING COUNT(*) > 1;
 
-
 -- Runtime 740 ms
 SELECT p1.email AS Email
 FROM Person p1
