@@ -40,5 +40,3 @@ def solution(n: int) -> List[int]:
         answer += l
 
     return answer
-
-print(solution(10))
