@@ -9,7 +9,7 @@ def solution(n, q, anw):
         candidate_set = set(candidate)
         
         match_count = all(
-            # python에서 set연산이 이렇게 가능하다니...
+            # python에서 set연산이 이렇게 가능하다니... 이걸 왜 이제알았지
             len(candidate_set & set(input_data)) == answer
             for input_data, answer in zip(q, anw)
         )
