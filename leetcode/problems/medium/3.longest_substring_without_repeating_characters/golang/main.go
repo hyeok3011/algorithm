@@ -24,3 +24,17 @@ func max(a, b int) int {
 	}
 	return b
 }
+
+func lengthOfLongestSubstring2(s string) int {
+	set := make(map[rune]int)
+	answer := 0
+	startIndex := 0
+	for i, v := range s {
+		if preIndex, exist := set[v]; exist && startIndex <= preIndex {
+			startIndex = preIndex + 1
+		}
+		answer = max(answer, i-startIndex+1)
+		set[v] = i
+	}
+	return answer
+}
