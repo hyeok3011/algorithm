@@ -7,5 +7,5 @@ import (
 )
 
 func TestConvert(t *testing.T) {
-	assert.Equal(t, convert("", 3), 3)
+	assert.Equal(t, convert("PAYPALISHIRING", 3), "PAHNAPLSIIGYIR")
 }

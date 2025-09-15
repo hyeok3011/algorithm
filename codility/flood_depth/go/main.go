@@ -28,3 +28,23 @@ func Solution(A []int) int {
 
 	return maxDepth
 }
+
+const (
+	MAX_DEPTH = 999999999
+)
+
+func Solution2(A []int) int {
+	// Implement your solution here
+	answer := 0
+	leftWall := 0
+	minDepth := MAX_DEPTH
+	for _, height := range A {
+		minDepth = min(minDepth, height)
+		answer = max(answer, min(height, leftWall)-minDepth)
+		if height > leftWall {
+			leftWall = height
+			minDepth = MAX_DEPTH
+		}
+	}
+	return answer
+}
