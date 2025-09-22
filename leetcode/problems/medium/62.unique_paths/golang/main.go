@@ -34,3 +34,23 @@ func findPath(row, col int, visited [][]int) int {
 
 	return count
 }
+
+func uniquePathsDP(m int, n int) int {
+	dp := make([][]int, m)
+	for i := 0; i < len(dp); i++ {
+		dp[i] = make([]int, n)
+	}
+	dp[0][0] = 1
+	for row := 0; row < len(dp); row++ {
+		for col := 0; col < len(dp[row]); col++ {
+			if row > 0 {
+				dp[row][col] += dp[row-1][col]
+			}
+
+			if col > 0 {
+				dp[row][col] += dp[row][col-1]
+			}
+		}
+	}
+	return dp[m-1][n-1]
+}
