@@ -43,3 +43,33 @@ func stringToReverseByteArray(src string) []byte {
 
 	return byteArray
 }
+
+func addBinary2(a string, b string) string {
+    aIndex, bIndex := len(a) - 1, len(b) - 1
+    overflow := false
+    sumBuffer := make([]byte, max(len(a), len(b)))
+    index := len(sumBuffer) - 1
+    for aIndex >= 0 || bIndex >= 0 {
+        sum := 0
+        if aIndex >= 0{
+            sum += int(a[aIndex] - '0')
+            aIndex--
+        }
+        if bIndex >= 0{
+            sum += int(b[bIndex] - '0')
+            bIndex--
+        }
+        if overflow {
+            sum += 1
+            overflow = false
+        }
+        overflow = sum > 1
+        sumBuffer[index] = byte(sum % 2 + '0')
+        index--
+    }
+    answer := string(sumBuffer)
+    if overflow {
+        answer = "1" + answer
+    }
+    return answer
+}
