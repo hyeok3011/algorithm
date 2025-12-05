@@ -1,6 +1,6 @@
 module github.com/hyeok3011/algorithm
 
-go 1.20
+go 1.24
 
 require (
 	github.com/go-playground/assert v1.2.1
