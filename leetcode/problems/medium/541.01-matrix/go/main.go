@@ -39,3 +39,51 @@ func updateMatrix(mat [][]int) [][]int {
 
 	return mat
 }
+
+// 그냥 bfs로 풀수 있던 방법이였음. 처음에 접근을 잘못함.
+// @@@@
+func updateMatrixBfs(mat [][]int) [][]int {
+	queue := [][]int{}
+	for row := range mat {
+		for col := range mat[row] {
+			if mat[row][col] == 0 {
+				queue = append(queue, []int{row, col})
+			} else {
+				mat[row][col] = -1
+			}
+		}
+	}
+
+	level := 0
+
+	for len(queue) > 0 {
+		task := len(queue)
+		level++
+
+		for i := 0; i < task; i++ {
+			row := queue[i][0]
+			col := queue[i][1]
+			if row+1 < len(mat) && mat[row+1][col] == -1 {
+				mat[row+1][col] = level
+				queue = append(queue, []int{row + 1, col})
+			}
+
+			if row-1 >= 0 && mat[row-1][col] == -1 {
+				mat[row-1][col] = level
+				queue = append(queue, []int{row - 1, col})
+			}
+
+			if col+1 < len(mat[row]) && mat[row][col+1] == -1 {
+				mat[row][col+1] = level
+				queue = append(queue, []int{row, col + 1})
+			}
+
+			if col-1 >= 0 && mat[row][col-1] == -1 {
+				mat[row][col-1] = level
+				queue = append(queue, []int{row, col - 1})
+			}
+		}
+		queue = queue[task:]
+	}
+	return mat
+}
