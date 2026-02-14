@@ -1,7 +1,7 @@
 package main
 
 // https://leetcode.com/problems/different-ways-to-add-parentheses/
-// @@@@ bottom up방식으로 풀어봤는데 생각보다 구현이 어려웠음. 다시 풀어봐야함...
+// @@@@ 생각보다 구현이 어려웠음. 다시 풀어봐야함...
 func diffWaysToCompute(expression string) []int {
 	numbers := []int{}
 	operations := []byte{}
