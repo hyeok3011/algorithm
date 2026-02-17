@@ -1,4 +1,5 @@
-// // https://leetcode.com/problems/different-ways-to-add-parentheses/
+// https://leetcode.com/problems/different-ways-to-add-parentheses/
+// 다른 사람의 깔끔한 코드를 보고 재풀이
 class Solution {
     val memo = mutableMapOf<String, List<Int>>()
     fun diffWaysToCompute(expression: String): List<Int> {
